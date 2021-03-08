@@ -1,0 +1,265 @@
+_uses:
+  - positivity
+object:
+  _uses:
+    - individual
+    - spatial
+    - part of
+    - info
+    - fictional
+  concrete object:
+    _uses:
+      - spatial = 1
+      - artificial
+      - axial
+      - movable
+      - instrumental
+      - container
+      - specific =~ 0
+    discrete object:
+      potag:
+        animate:
+          _uses:
+            - artificial = 0
+            - info = 0
+            - instrumental = 0
+            - container = 0
+          microscopic:
+            _uses:
+              - movable = 1
+          animal:
+            _uses:
+              - movable = 1
+              - living on land
+              - living in sea
+              - flies
+            mammal: "-"
+            reptile: "-"
+            bird: "-"
+            fish: "-"
+            amphibia: "-"
+            insect: "-"
+            arachnid: "-"
+          plant:
+            fruit: "-"
+            tree: "-"
+            flower: "-"
+            shrub: "-"
+            weed: "-"
+            mushroom: "-"
+          human:
+            _uses:
+              - axial = 1
+              - movable = 1
+              - family related
+            profession: "-"
+            title: "-"
+            state: "-"
+            group:
+              _uses:
+                - individual = 0
+        inanimate:
+          _uses:
+            - artificial = 1
+            - instrumental = 1
+            - digital
+          transport:
+            _uses:
+              - container = 1
+              - movable = 1
+          calculation: "-"
+          industry: "-"
+          home: "-"
+          military: "-"
+      instrument:
+        _uses:
+          - size
+          - instrumental = 1
+        musical instrument:
+          _uses:
+            - artificial = 1
+        sport device:
+          _uses:
+            - artificial = 1
+        scientific device:
+          _uses:
+            - artificial = 1
+        device:
+          _uses:
+            - mechanical
+          weapon:
+            _uses:
+              - lethal
+          medical: "-"
+        containing:
+          _uses:
+            - movable = 1
+            - container = 1
+        furniture:
+          _uses:
+            - artificial = 1
+            - movable = 0.35
+        informative:
+          _uses:
+            - movable = 1
+            - info = 1
+      clothes:
+        _uses:
+          - movable = 1
+          - artificial = 1
+          - axial = 1
+          - info = 0
+          - instrumental = 0.85
+          - underwear
+          - outdoor =~ -1
+        always: "-"
+        winter: "-"
+        summer: "-"
+        rain: "-"
+      building:
+        _uses:
+          - movable = 0
+          - container = 1
+          - artificial = 1
+      geographical:
+        _uses:
+          - movable = 0
+          - carries water
+        landscape: "-"
+        landscape feature:
+          _uses:
+            - artificial = 0
+            - instrumental = 0
+        biome: "-"
+        constructed:
+          _uses:
+            - artificial = 1
+            - big
+          iconic building:
+            _uses:
+              - container = 1
+              - carries water = 0
+          city:
+            _uses:
+              - container = 1
+              - carries water = 0
+          country:
+            _uses:
+              - container = 1
+              - carries water = 0
+    substance:
+      _uses:
+        - axial = 0
+        - instrumental = 1
+        - movable = 1
+        - info = 0
+        - food
+        - transparent
+        - radioactive
+        - medicine
+        - poisonous
+      fluid: "-"
+      firm:
+        metal: "-"
+        organic: "-"
+      gas: "-"
+  abstract object:
+    _uses:
+      - methodical
+    discipline:
+      art:
+        music: "-"
+        painting: "-"
+        creative writing: "-"
+      science: "-"
+      sports: "-"
+    attribute:
+      measurable attribute: "-"
+      non-measurable attribute: "-"
+    language: "-"
+    relationship: "-"
+    ideal object: "-"
+    abstract temporal object: "-"
+    modality: "-"
+    situational object:
+      dynamic situational object: "-"
+      static situational object: "-"
+    institution:
+      _uses:
+        - institution size
+      local institution:
+        _uses:
+          - institution size = 0
+      cultural institution:
+        _uses:
+          - institution size = 0.8
+      national institution:
+        _uses:
+          - institution size = 0.5
+      religious institution:
+        _uses:
+          - institution size = 0.8
+      global institution:
+        _uses:
+          - institution size = 1
+      economical institution: "-"
+  virtual object:
+    _uses:
+      - spatial = 0
+    operating system: "-"
+    program: "-"
+    data:
+      _uses:
+        - info = 1
+    data structure:
+      _uses:
+        - info = 0.85
+    data transmitter: "-"
+    user interface: "-"
+    external interface: "-"
+situation:
+  dynamic situation:
+    action:
+      _uses:
+        - reflexive action
+        - transitive action
+      animate action:
+        human action: "-"
+        animal action: "-"
+        plant action: "-"
+      inanimate action: "-"
+    happening:
+      natural happening: "-"
+      supernatural happening: "-"
+      random happening: "-"
+  static situation:
+    animate situation:
+      human situation: "-"
+      animal situation: "-"
+      plant situation: "-"
+    inanimate situation: "-"
+situational descriptor:
+  time:
+    time relation: "-"
+    duration: "-"
+    point in time: "-"
+  modal situational descriptor: "-"
+quality:
+  property:
+    total quality: "-"
+    gradable quality:
+      measurable quality: "-"
+      non-measurable quality: "-"
+  relational quality: "-"
+  functional quality:
+    operational quality: "-"
+    associative quality: "-"
+quantity:
+  quantificator:
+    numerical quantificator: "-"
+    non-numerical quantificator: "-"
+  unit of measurement: "-"
+  measurement: "-"
+graduator:
+  qualitative graduator: "-"
+  quantitative graduator: "-"
