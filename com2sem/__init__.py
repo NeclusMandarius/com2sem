@@ -16,7 +16,7 @@ try:
 except ImportError:
     word_tokenize = None
 
-from conf import Configuration
+from .conf import Configuration
 
 
 class Com2Sem:

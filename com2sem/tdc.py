@@ -6,7 +6,7 @@
 import csv
 import os
 
-from conf import Configuration
+from .conf import Configuration
 
 from tkinter import *
 from tkinter import filedialog
