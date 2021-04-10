@@ -259,7 +259,7 @@ for context, relevant_words in model.justify("computer", com.get_single_vector_p
 # Calculate similarity
 print(
     "Similarity of computer and PC:",
-    com.normalized_concept_overlapping(
+    model.normalized_concept_overlapping(
         com.get_single_vector_ppmi("computer"),
         com.get_single_vector_ppmi("PC"),
         False
@@ -267,7 +267,7 @@ print(
 )
 
 # Display a decision diagram of the tree for the `is digital` feature
-com.show_tree("is digital")
+model.show_tree("is digital")
 ```
 
 ## Target Space for Testing Purposes
