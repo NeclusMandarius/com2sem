@@ -107,7 +107,7 @@ For constructing co-occurrence matrices, a wrapper class for the NLTK class `Big
 namely `COM`. The documentation is already quite excessive, so here just a few examples.
 
 #### Minimal Working Example
-```
+```python
 from com2sem.com import COM
 CORPUS_FILE = '/path/to/corpus.txt'
 
@@ -119,14 +119,14 @@ ppmi_vector_matrix = com.get_vectors_pmi(["computer", "science"])
 assert (ppmi_vector_matrix[0] == single_ppmi_vector).all()
 ```
 #### Specify a Custom Window Radius
-```
+```python
 [...]
 WINDOW_RADIUS = 5
 
 com = COM(CORPUS_FILE, window_mapping=WINDOW_RADIUS).build()
 ```
 #### Example with High Customization
-```
+```python
 [...]
 
 com = COM(
@@ -221,7 +221,7 @@ As the documentation already covers all the details, this section will present a
 of example code.
 
 ### Minimum Working Example
-```
+```python
 from com2sem import Com2Sem
 
 [...] # Build a co-occurrence matrix `com: COM`
@@ -234,7 +234,7 @@ model.train(TRAINING_DATA_PATH, com.get_single_vector_ppmi)
 ```
 
 ### Using the Model
-```
+```python
 [...] # Model `model` and COM `com` already defined
 
 embeddings = model.predict(com.get_single_vector_ppmi("computer"))
