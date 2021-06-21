@@ -1,6 +1,6 @@
 # Com2Sem
-This project is an implementation created along with my Bachelor thesis about a new word embedding approach based on
-decision trees (I will probably add a link to the paper as soon as it is passed). Its main objectives are explainability and interpretability, which, however, lead to some technical and
+This project is an implementation created along with [my Bachelor's thesis](https://www-ai.cs.tu-dortmund.de/PublicPublicationFiles/schmidt_2021a.pdf) about a new word embedding approach based on
+decision trees. Its main objectives are explainability and interpretability, which, however, lead to some technical and
 conceptional limitations (at least for the time being); so if you are looking for a powerful and easily set up embedding
 model, this is probably not an ideal choice. If you are still interested: in the following, it will shortly be outlined
 what this project is all about.
